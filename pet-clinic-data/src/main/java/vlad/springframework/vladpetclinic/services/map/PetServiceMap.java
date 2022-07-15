@@ -2,7 +2,6 @@ package vlad.springframework.vladpetclinic.services.map;
 
 import org.springframework.stereotype.Service;
 import vlad.springframework.vladpetclinic.model.Pet;
-import vlad.springframework.vladpetclinic.services.CrudService;
 import vlad.springframework.vladpetclinic.services.PetService;
 
 import java.util.Set;
