@@ -1,10 +1,12 @@
 package vlad.springframework.vladpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import vlad.springframework.vladpetclinic.model.Owner;
 import vlad.springframework.vladpetclinic.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
     @Override
     public Set<Owner> findAll() {

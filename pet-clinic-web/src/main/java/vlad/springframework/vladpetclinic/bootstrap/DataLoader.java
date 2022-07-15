@@ -6,8 +6,6 @@ import vlad.springframework.vladpetclinic.model.Owner;
 import vlad.springframework.vladpetclinic.model.Vet;
 import vlad.springframework.vladpetclinic.services.OwnerService;
 import vlad.springframework.vladpetclinic.services.VetService;
-import vlad.springframework.vladpetclinic.services.map.OwnerServiceMap;
-import vlad.springframework.vladpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -15,9 +13,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
