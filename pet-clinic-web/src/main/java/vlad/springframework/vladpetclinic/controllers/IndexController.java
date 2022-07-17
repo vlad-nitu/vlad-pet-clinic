@@ -10,4 +10,8 @@ public class IndexController {
         return "index"; // wires up controller for templates/index.html
     }
 
+    @RequestMapping("/oups")
+    public String oupsHandler() {
+    return "notimplemented";
+    }
 }
