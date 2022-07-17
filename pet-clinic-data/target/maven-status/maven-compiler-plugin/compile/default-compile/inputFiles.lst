@@ -1,5 +1,14 @@
 /Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/model/Pet.java
 /Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/model/Person.java
-/Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/model/Vet.java
 /Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/model/PetType.java
+/Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/services/map/PetServiceMap.java
+/Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/services/map/AbstractMapService.java
+/Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/services/OwnerService.java
+/Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/services/PetService.java
+/Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/services/map/OwnerServiceMap.java
+/Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/services/map/VetServiceMap.java
 /Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/model/Owner.java
+/Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/model/Vet.java
+/Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/model/BaseEntity.java
+/Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/services/CrudService.java
+/Users/vladnitu/Desktop/TUDelft/spring-course/vlad-pet-clinic/pet-clinic-data/src/main/java/vlad/springframework/vladpetclinic/services/VetService.java
