@@ -1,11 +1,17 @@
 vlad/springframework/vladpetclinic/services/PetService.class
 vlad/springframework/vladpetclinic/services/CrudService.class
+vlad/springframework/vladpetclinic/services/map/SpecialityServiceMap.class
 vlad/springframework/vladpetclinic/model/Person.class
 vlad/springframework/vladpetclinic/model/Owner.class
 vlad/springframework/vladpetclinic/services/map/AbstractMapService.class
+vlad/springframework/vladpetclinic/services/SpecialityService.class
 vlad/springframework/vladpetclinic/model/BaseEntity.class
 vlad/springframework/vladpetclinic/services/VetService.class
+vlad/springframework/vladpetclinic/services/map/PetTypeServiceMap.class
+vlad/springframework/vladpetclinic/model/Visit.class
 vlad/springframework/vladpetclinic/services/map/VetServiceMap.class
+vlad/springframework/vladpetclinic/services/PetTypeService.class
+vlad/springframework/vladpetclinic/model/Speciality.class
 vlad/springframework/vladpetclinic/services/map/PetServiceMap.class
 vlad/springframework/vladpetclinic/model/PetType.class
 vlad/springframework/vladpetclinic/services/map/OwnerServiceMap.class
