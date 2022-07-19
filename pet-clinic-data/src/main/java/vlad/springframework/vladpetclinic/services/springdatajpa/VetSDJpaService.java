@@ -2,7 +2,6 @@ package vlad.springframework.vladpetclinic.services.springdatajpa;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-import vlad.springframework.vladpetclinic.model.Owner;
 import vlad.springframework.vladpetclinic.model.Vet;
 import vlad.springframework.vladpetclinic.repositories.VetRepository;
 import vlad.springframework.vladpetclinic.services.VetService;
