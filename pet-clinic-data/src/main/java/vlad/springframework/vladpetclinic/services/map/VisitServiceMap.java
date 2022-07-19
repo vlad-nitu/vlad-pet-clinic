@@ -1,11 +1,13 @@
 package vlad.springframework.vladpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import vlad.springframework.vladpetclinic.model.Visit;
 import vlad.springframework.vladpetclinic.repositories.VisitRepository;
 import vlad.springframework.vladpetclinic.services.VisitService;
 
 import java.util.Set;
 
+@Service
 public class VisitServiceMap extends AbstractMapService<Visit, Long> implements VisitService {
     private final VisitRepository visitRepository;
 

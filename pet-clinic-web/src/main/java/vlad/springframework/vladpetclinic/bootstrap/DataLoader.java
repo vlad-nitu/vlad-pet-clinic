@@ -3,10 +3,7 @@ package vlad.springframework.vladpetclinic.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import vlad.springframework.vladpetclinic.model.*;
-import vlad.springframework.vladpetclinic.services.OwnerService;
-import vlad.springframework.vladpetclinic.services.PetTypeService;
-import vlad.springframework.vladpetclinic.services.SpecialityService;
-import vlad.springframework.vladpetclinic.services.VetService;
+import vlad.springframework.vladpetclinic.services.*;
 
 import java.time.LocalDate;
 
@@ -17,12 +14,14 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
+    private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialityService = specialityService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -76,14 +75,21 @@ public class DataLoader implements CommandLineRunner {
         owner2.setCity("Ploiesti");
         owner2.setTelephone("0747567567");
 
-        Pet marasPet = new Pet();
-        marasPet.setPetType(cat);
-        marasPet.setOwner(owner2);
-        marasPet.setBirthDate(LocalDate.now());
-        marasPet.setName("Fifi");
-        owner2.getPets().add(marasPet);
+        Pet marasCat = new Pet();
+        marasCat.setPetType(cat);
+        marasCat.setOwner(owner2);
+        marasCat.setBirthDate(LocalDate.now());
+        marasCat.setName("Fifi");
+        owner2.getPets().add(marasCat);
 
         ownerService.save(owner2);
+
+        Visit catVisit = new Visit();
+        catVisit.setPet(marasCat);
+        catVisit.setDate(LocalDate.now());
+        catVisit.setDescription("Sneezy cat");
+
+        visitService.save(catVisit);
 
         System.out.println("Loading owners...");
 
