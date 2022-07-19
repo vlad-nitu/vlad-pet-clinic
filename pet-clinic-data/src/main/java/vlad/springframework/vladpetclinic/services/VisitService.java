@@ -1,7 +1,6 @@
-package vlad.springframework.vladpetclinic.services.map;
+package vlad.springframework.vladpetclinic.services;
 
 import vlad.springframework.vladpetclinic.model.Visit;
-import vlad.springframework.vladpetclinic.services.CrudService;
 
 public interface VisitService extends CrudService<Visit, Long> {
 }

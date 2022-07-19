@@ -2,6 +2,7 @@ package vlad.springframework.vladpetclinic.services.map;
 
 import vlad.springframework.vladpetclinic.model.Visit;
 import vlad.springframework.vladpetclinic.repositories.VisitRepository;
+import vlad.springframework.vladpetclinic.services.VisitService;
 
 import java.util.Set;
 
