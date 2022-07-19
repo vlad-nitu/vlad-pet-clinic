@@ -1,5 +1,6 @@
 package vlad.springframework.vladpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import vlad.springframework.vladpetclinic.model.Visit;
 import vlad.springframework.vladpetclinic.repositories.VisitRepository;
@@ -8,6 +9,7 @@ import vlad.springframework.vladpetclinic.services.VisitService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VisitServiceMap extends AbstractMapService<Visit, Long> implements VisitService {
     private final VisitRepository visitRepository;
 

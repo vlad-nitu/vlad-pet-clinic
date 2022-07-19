@@ -1,5 +1,6 @@
 package vlad.springframework.vladpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import vlad.springframework.vladpetclinic.model.PetType;
 import vlad.springframework.vladpetclinic.services.PetTypeService;
@@ -7,6 +8,7 @@ import vlad.springframework.vladpetclinic.services.PetTypeService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class PetTypeServiceMap extends AbstractMapService<PetType, Long> implements PetTypeService {
     @Override
     public Set<PetType> findAll() {

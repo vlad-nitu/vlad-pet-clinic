@@ -1,5 +1,6 @@
 package vlad.springframework.vladpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import vlad.springframework.vladpetclinic.model.Owner;
 import vlad.springframework.vladpetclinic.model.Pet;
@@ -10,6 +11,7 @@ import vlad.springframework.vladpetclinic.services.PetTypeService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     private final PetTypeService petTypeService;
     private final PetService petService;
