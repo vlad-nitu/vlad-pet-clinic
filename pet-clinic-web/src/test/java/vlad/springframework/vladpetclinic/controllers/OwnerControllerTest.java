@@ -8,6 +8,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import vlad.springframework.vladpetclinic.model.Owner;
 import vlad.springframework.vladpetclinic.services.OwnerService;
@@ -89,6 +91,20 @@ class OwnerControllerTest {
         mockMvc.perform(MockMvcRequestBuilders.get("/owners"))
                 .andExpect(status().is3xxRedirection())
                 .andExpect(view().name("redirect:/owners/1"));
+    }
+    @Test
+    void processFindFormEmptyReturnMany() throws Exception{
+        when(ownerService.findAllByLastNameLike(anyString()))
+                .thenReturn(List.of(Owner.builder().id(1L).build(),
+                        Owner.builder().id(2L).build()));
+        mockMvc.perform(get("/owners")
+                .param("lastName", ""))
+               //.andDo(MockMvcResultHandlers.print()) //debug purpose
+                .andExpect(status().isOk())
+                .andExpect(view().name("owners/ownersList"))
+                .andExpect(model().attribute("selections", hasSize(2)));
+
+
     }
 
     @Test
