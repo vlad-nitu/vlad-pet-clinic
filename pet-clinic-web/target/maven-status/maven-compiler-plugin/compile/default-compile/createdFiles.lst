@@ -1,0 +1,8 @@
+vlad/springframework/vladpetclinic/VladPetClinicApplication.class
+vlad/springframework/vladpetclinic/controllers/IndexController.class
+vlad/springframework/vladpetclinic/controllers/VisitController.class
+vlad/springframework/vladpetclinic/controllers/PetController.class
+vlad/springframework/vladpetclinic/bootstrap/DataLoader.class
+vlad/springframework/vladpetclinic/formatters/PetTypeFormatter.class
+vlad/springframework/vladpetclinic/controllers/VetController.class
+vlad/springframework/vladpetclinic/controllers/OwnerController.class
